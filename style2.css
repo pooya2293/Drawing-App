@@ -1,74 +1,8 @@
-body {
-	background:url(images/bg.jpg)
-	center center fixed;
+/*center all elemnts and bg image*/
+body{
+	text-align: center;
+	background: url(images/bg1.jpg) center center no-repeat fixed;
 	background-size: cover;
-	color:#fff;
+	background-position:20% 20% ;
 
 }
-
-/*tittle*/
-#header{
-	text-align:center;
-	font-size:9vw;
-}
-
-/*lap*/
-#timeLap {
-	text-align: right;
-	font-size:4vw;
-	margin:0 40px;
-}
-
-/*time*/
-#time {
-	text-align:center;
-	font-size:8vw;
-	margin:20 0;
-}
-
-/*controls*/
-#controlsContainer {
-	margin-bottom:100px;
-}
-
-.control {
-	color:#fff;
-	background-color:#d7A04e;
-	width:11vw;
-	height:11vw;
-	border-radius:100px;
-	text-align:center;
-	padding:29% 0;
-	font-size:2.4vw;
-	cursor:pointer;
-}
-
-.control:active {
-	background-color:#fff;
-	color:#d7A04e;
-}
-
-
-#laps {
-	overflow-y:scroll;
-	max-height:270px;
-}
-
-.lap {
-	border-bottom:solid 1px #fff;
-}
-
-.lapTimeTittle {
-	padding:20px 10px 10px 0;
-	height:40px;
-	margin:0 0;
-	color:#2b2828;
-}
-
-.lapTime{
-	padding:2px 10px;
-	margin:-5% 1vw;
-	float:right;
-	color:#2b2828;	
-}
-

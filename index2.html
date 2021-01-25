@@ -42,16 +42,43 @@
   </head>
   <body>
   <!-- tittle -->
-
+  <div id="header">Drawing App</div>
   <!-- tool Box -->
+  <div class="toolBox">
     <!-- color -->
+    <div class="input" id="colorInput">
+      <input type="color" list id="paintColor">
+    </div>
+
     <!-- size -->
+    <div class="input" id="thicknessInput">
+      <div class="circle"></div>
+    </div>
+    <div class="input">
+      <div id="slider"></div>
+    </div>
+  </div>
 
   <!-- canvas container -->
+  <div id="container">
+    <canvas id="paint" width="500px" height="400px"></canvas>
+  </div>
   <!-- buttons -->
+  <div class="toolBox2">
     <!-- Erase -->
+    <div class="input2">
+      <span id="erase" class="button">Erase</span>
+    </div>
     <!-- Save -->
+    <div class="input2">
+      <span id="save" class="button">Save</span>
+    </div>
     <!-- Reset -->
+    <div class="input2">
+      <span id="reset" class="button">Reset</span>
+    </div>
+    
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
