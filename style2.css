@@ -3,6 +3,93 @@ body{
 	text-align: center;
 	background: url(images/bg1.jpg) center center no-repeat fixed;
 	background-size: cover;
-	background-position:20% 20% ;
+	background-position:20% 30% ;
+
+}
+
+#header {
+	margin:10px auto;
+	font-size:13vw;
+	color:#fff;
+	text-shadow: 2px 5px 7.3px rgb(10,10,20);
+}
+
+.toolBox {
+	width:200px;
+	margin:0 auto;
+}
+
+.input {
+	height:30px;
+	font-size: 1.3em;
+}
+
+#slider {
+	margin: 10px auto;
+}
+
+.input2 {
+	width: 133px;
+	float: left;
+	font-size: 1.3em;
+	color: #fff;
+	margin:20px -25px;
+}
+
+/*
+#container{
+	margin:-40px 0;
+}
+*/
+
+
+.toolBox2 {
+	margin:-20% auto;
+	width:270px;
+}
+
+
+.button {
+	
+	background: rgba(0,0,0,0.65);
+	height:50px;
+	padding:10px;
+	border-radius: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0px 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 4px rgba(0,0,0,0.2);
+	position: relative;
+}
+
+.button:hover{
+	background:rgba(100,100,100,0.2);
+	color: #3a3333;
+}
+
+.button:active{
+	top:3px;
+}
+
+
+
+/*backgrounf responsive*/
+@media (min-width:420px) and (max-width:660px){
+	
+	body{
+		background-size :150%;
+		background-position :50% 20%;
+	}
+
+}
+
+@media (min-width:100px) and (max-width:419.99px){
+	
+	body{
+		background-size :200%;
+		background-position :50% 20%;
+
+	}
 
 }
