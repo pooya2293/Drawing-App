@@ -52,7 +52,9 @@ body{
 
 #paint {
 
-  cursor: url(images/pen.png), auto;
+  cursor: auto;
+  cursor: url(images/pen.png) 4 12, auto;
+  cursor: url(images/pen.cur),  auto;
  
 }
 
