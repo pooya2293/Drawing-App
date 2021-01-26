@@ -29,6 +29,7 @@ body{
 }
 
 
+
 #circle {
 	height:3px;
 	width:3px;
@@ -38,7 +39,16 @@ body{
 	position: absolute;
 	top:50%;
 	left:50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
 
+}
+
+#thicknessInput {
+	position: relative;
 }
 
 /*canves container*/
@@ -46,15 +56,18 @@ body{
 #container {
 	width:500px;
 	height:400px;
-	border:2px solid rgba(122,174,299,0.5) ;
+	border:2px solid rgba(122,174,299,0.4) ;
 	margin: 10px auto;
+
 }
 
 #paint {
 
+ /* background-color:#fff;*/
   cursor: auto;
   cursor: url(images/pen.png) 4 12, auto;
-  cursor: url(images/pen.cur),  auto;
+  /*for internet exploer*/
+  cursor: url(images/pen.cur), auto;
  
 }
 
@@ -70,8 +83,8 @@ body{
 
 
 .toolBox2 {
-	margin:-5% auto;
-	width:270px;
+	margin:-1% auto;
+	width:250px;
 }
 
 
