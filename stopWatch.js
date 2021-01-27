@@ -11,28 +11,34 @@ $(function(){
         }
     });
 
-    //this code for learning canvas
-    // make canvas paintable
-    var canvas = document.getElementById("paint");
-    var context = canvas.getContext('2d');
+//declare variables
+	var paint = false;//paintingerasing or not
+	var paint_erase = "paint"//painting or erasing
+	//get the canvas and context
+	var canvas = document.getElementById("paint")
+	var ctx = canvas.getContext("2d");
+	//get the canvas container
+	var container = $("#container");
+	//mouse position
+	var mouse = {x:0 , y:0}
+//onLoad load saved work from localStronge
 
-    // draw a line
-    // declare new path
-    context.beginPath();
-    // set line width
-    context.lineWidth = 30;
-    // set line color
-    context.strokeStyle = "#20b862";
-    // set cap to the line (round,butt,square)
-    context.lineCap = "round";
-    //set line join style (bevel,round,miter)
-    context.lineJoin = "round";
-    //positicon context point
-    context.moveTo(30,50);
-    //draw a straight line from staring point to a new position
-    context.lineTo(300,200);
-    //draw another line
-    context.lineTo(400,100);
-    // make line visible
-    context.stroke();
+
+//set drawing parametrs (lineWidth,lineJoin,lineCap)
+ctx.lineWidth = 3;
+ctx.lineJoin = "round";
+ctx.lineCap = "round";
+
+//click inside container 
+container.mousedown(function(){
+	paint = true;
+	window.alert(paint)//its for check
+})
+//move the mouse while holding mouse key 
+//mouse up --> we are not paintingEreasing anymore
+//if we leave the container --> we are not paintingEreasing anymore
+//click on the reset button
+//click on save button
+
+
 });
