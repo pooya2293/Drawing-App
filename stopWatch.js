@@ -63,6 +63,11 @@ container.mouseleave(function(){
 	paint = false;
 });
 //click on the reset button
+$("#reset").click(function(){
+	ctx.clearRect(0,0,canvas.width,canvas.height);
+	paint_erase = "paint";
+	$("#erase").removeClass("eraseON");
+});
 
 //click on save button
 //click on the erase button
