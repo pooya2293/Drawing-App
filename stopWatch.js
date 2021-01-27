@@ -22,7 +22,9 @@ $(function(){
 	//mouse position
 	var mouse = {x:0 , y:0}
 //onLoad load saved work from localStronge
-
+if(localStorage.getItem("x") != null){
+	window.alert("x is there and it is equle to " + localStorage.getItem("x"));
+};
 
 //set drawing parametrs (lineWidth,lineJoin,lineCap)
 ctx.lineWidth = 3;
@@ -70,6 +72,14 @@ $("#reset").click(function(){
 });
 
 //click on save button
+//learn local storage 
+$("#save").click(function(){
+	if(typeof(localStorage) != null){
+		localStorage.setItem("x", 17);
+	}else{
+		window.alert("Your browser does not support localStorage ")
+	}
+});
 //click on the erase button
 $("#erase").click(function(){
 	if(paint_erase == "paint"){
