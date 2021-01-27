@@ -11,6 +11,7 @@ $(function(){
         }
     });
 
+    //this code for learning canvas
     // make canvas paintable
     var canvas = document.getElementById("paint");
     var context = canvas.getContext('2d');
