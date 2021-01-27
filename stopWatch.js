@@ -30,11 +30,30 @@ ctx.lineJoin = "round";
 ctx.lineCap = "round";
 
 //click inside container 
-container.mousedown(function(){
+container.mousedown(function(e){
 	paint = true;
-	window.alert(paint)//its for check
-})
+	ctx.beginPath();
+	mouse.x = e.pageX - this.offsetLeft;
+	mouse.y = e.pageY - this.offsetTop;
+	ctx.moveTo(mouse.x,mouse.y);
+
+});
 //move the mouse while holding mouse key 
+container.mousemove(function(e){
+	mouse.x = e.pageX - this.offsetLeft;
+	mouse.y = e.pageY - this.offsetTop;
+	if(paint == true){
+		if(paint_erase == "paint"){
+			// get color input
+			ctx.strokeStyle = "red";
+		}else{
+			//get white color for erase
+			ctx.strokeStyle = "#fff";
+		}
+		ctx.lineTo(mouse.x, mouse.y)
+		ctx.stroke();
+	}
+});
 //mouse up --> we are not paintingEreasing anymore
 //if we leave the container --> we are not paintingEreasing anymore
 //click on the reset button
