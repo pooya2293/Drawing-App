@@ -55,9 +55,23 @@ container.mousemove(function(e){
 	}
 });
 //mouse up --> we are not paintingEreasing anymore
+container.mouseup(function(){
+	paint = false;
+});
 //if we leave the container --> we are not paintingEreasing anymore
+container.mouseleave(function(){
+	paint = false;
+});
 //click on the reset button
-//click on save button
 
+//click on save button
+//click on the erase button
+$("#erase").click(function(){
+	if(paint_erase == "paint"){
+		paint_erase = "erase";
+	}else{
+		paint_erase = "paint";
+	}
+})
 
 });
