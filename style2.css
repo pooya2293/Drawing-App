@@ -63,7 +63,7 @@ body{
 
 #paint {
 
- /* background-color:#fff;*/
+  background-color:#fff;
   cursor: auto;
   cursor: url(images/pen.png) 4 12, auto;
   /*for internet exploer*/
