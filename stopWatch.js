@@ -72,6 +72,7 @@ $("#erase").click(function(){
 	}else{
 		paint_erase = "paint";
 	}
-})
+	$(this).toggleClass("eraseON");
+});
 
 });

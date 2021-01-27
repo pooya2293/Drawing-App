@@ -111,7 +111,11 @@ body{
 	top:3px;
 }
 
-
+/*relate to js file*/
+.eraseON{
+	background:#2543cd;
+	color:#fff;
+}
 
 /*backgrounf responsive*/
 @media (min-width:420px) and (max-width:660px){
