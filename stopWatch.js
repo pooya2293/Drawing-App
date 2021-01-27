@@ -22,8 +22,12 @@ $(function(){
 	//mouse position
 	var mouse = {x:0 , y:0}
 //onLoad load saved work from localStronge
-if(localStorage.getItem("x") != null){
-	window.alert("x is there and it is equle to " + localStorage.getItem("x"));
+if(localStorage.getItem("saveFile") != null){
+	var img = new Image();
+	img.onload = function(){
+		ctx.drawImage(img, 0, 0);
+	}
+	img.src = localStorage.getItem("saveFile");
 };
 
 //set drawing parametrs (lineWidth,lineJoin,lineCap)
@@ -72,10 +76,12 @@ $("#reset").click(function(){
 });
 
 //click on save button
-//learn local storage 
+
 $("#save").click(function(){
 	if(typeof(localStorage) != null){
-		localStorage.setItem("x", 17);
+		localStorage.setItem("saveFile", canvas.toDataURL());
+		// show url of saveFile
+		// window.alert(localStorage.getItem("saveFile"));
 	}else{
 		window.alert("Your browser does not support localStorage ")
 	}
