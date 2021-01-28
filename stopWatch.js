@@ -18,7 +18,8 @@ $(function(){
 	var paint = false;//paintingerasing or not
 	var paint_erase = "paint"//painting or erasing
 	//get the canvas and context
-	var canvas = document.getElementById("paint")
+	//i dont know whay when the document.getElemntById change to $ its dont work i cant understant
+	var canvas = document.getElementById("paint");
 	var ctx = canvas.getContext("2d");
 	//get the canvas container
 	var container = $("#container");
